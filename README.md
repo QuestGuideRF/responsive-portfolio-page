@@ -34,7 +34,6 @@
 Responsive-Portfolio-Page/
 ├── index.html          # Главная HTML страница
 ├── style.css           # Стили проекта
-├── screenshot.png      # Скриншот проекта
 └── README.md           # Документация
 ```
 
