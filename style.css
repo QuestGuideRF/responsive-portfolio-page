@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: gray;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+.nav-link {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+.nav-link a {
+text-decoration: none;
+color: white;
+font-weight: bold;
+padding: 8px 15px;
+}
+.about, .skill {
+    padding: 50px;
+    text-align: center;
+    background: #f4f4f4;
+}
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+#skill p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+.skill h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: darkgray;
+    border-radius: 8px;
+}
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.footer {
+    background: gray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-link {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .about, .skill {
+        padding: 30px;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 400px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-link {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .about, .skill {
+        padding: 30px;
+    }
+    .grid {
+        grid-template-columns: 1fr ;
+    }
+}
